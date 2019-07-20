@@ -13,7 +13,7 @@ Interface::Interface()
 {
     pointer_={0,0,0,0,0};
     mode_={"static", "dynamic","random"};
-    map_={"map_01", "map_02", "map_03", "map_04", "random"};
+    map_={"map_01", "map_02", "map_03", "map_04", "map_05", "random"};
     scene_={"garden", "forest", "city", "mountain", "random"};  
     //garden 🌺 forest 🌲 city 🏢 mountain 🏔️
     scene_demo={"🌺", "🌵", "🏢", "🏔️", "random"};

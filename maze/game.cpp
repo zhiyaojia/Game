@@ -35,15 +35,6 @@ board(menu), player(0,0),solver(board)
     time_lag2=atoi(menu[8].c_str());
     time_amount=atoi(menu[7].c_str());
 
-    time_t tt = time(NULL);
-    tm* t= localtime(&tt);
-    int initial_sec=t->tm_sec;
-    int initial_min=t->tm_min;
-    initial_time=initial_min*60+initial_sec;
-    initial_time2=initial_time;
-    initial_time3=initial_time;
-    oldtime=initial_time;
-
     int Srow, Scol, Frow, Fcol;
     for(int i=0; i<board.height(); i++)
         for(int j=0; j<board.width(); j++)
@@ -271,7 +262,6 @@ void Game::run()
 
 void Game::output()
 {
-    
         board.print(player.loc);
         int marginx=board.marginx();
         int space=47-marginx;
@@ -300,6 +290,16 @@ void Game::output()
             cout<<" ";
         cout<<"press j for guide"<<endl;
 }
+
+
+void Game::firstoutput()
+{
+    board.print(player.loc);
+    for(int i=0; i<50; i++)
+        cout<<" ";
+    cout<<"press r when ready"<<endl;
+}
+
 
 
 void Game::update_change(Loc loc, char ch)
@@ -348,6 +348,19 @@ bool Game::righttime2(int time_lag_)
         return true;
     }
     return false;
+}
+
+
+void Game::ini_time()
+{
+    time_t tt = time(NULL);
+    tm* t= localtime(&tt);
+    int initial_sec=t->tm_sec;
+    int initial_min=t->tm_min;
+    initial_time=initial_min*60+initial_sec;
+    initial_time2=initial_time;
+    initial_time3=initial_time;
+    oldtime=initial_time;
 }
 
 

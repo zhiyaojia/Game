@@ -15,6 +15,8 @@ public:
     void input();
     void run();
     void output();
+    void firstoutput();
+    void ini_time();
 
     bool logic();
     bool pause();

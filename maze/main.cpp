@@ -71,10 +71,24 @@ int main()
 	vector<string> menu=interface.run();
 
 	Game game(menu);
-	game.output();
+
+	if(menu[0]=="static")
+	{
+		game.firstoutput();
+		char ch;
+		while(true)
+		{
+			system("stty raw");
+            ch = getchar();
+            system("stty cooked");
+			if(ch=='r')
+				break;
+		}
+	}
 
 	try
 	{
+		game.ini_time();
 		while(game.logic())
 	    {
 	        game.input();
