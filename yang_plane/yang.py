@@ -141,8 +141,9 @@ if __name__ == "__main__":
 					exit()
 
 			if event.type ==  MOUSEBUTTONDOWN:
-				if (m_x > 377 and m_x < 657) and (m_y > 310 and m_y < 367):
-					start = True
+				if pygame.mouse.get_pressed() == (1, 0, 0):
+					if (m_x > 377 and m_x < 657) and (m_y > 310 and m_y < 367):
+						start = True
 
 
 		screen.blit(background_before, (0, 0))
@@ -259,7 +260,11 @@ if __name__ == "__main__":
 				if event.key == K_q:
 					exit()
 				if event.key == K_p:
-					pause = True
+					if pause == True:
+						pause = False
+						pause_assist = True
+					else:
+						pause = True
 				if event.key == K_j:
 					pygame.mixer.Channel(0).play(weige_music)
 					strong = True
@@ -276,7 +281,8 @@ if __name__ == "__main__":
 					else:
 						pause = True
 			# 伟哥
-				if (row > 769 and row < 862) and (col > 741 and col < 773):
+				if ((row > 769 and row < 862) and (col > 741 and col < 773)) or \
+				pygame.mouse.get_pressed() == (0, 0, 1):
 					strong_assist = True
 					if(weige_num > 0):
 						pygame.mixer.Channel(0).play(weige_music)
