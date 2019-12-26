@@ -1,0 +1,12 @@
+BBBBBBBBBBBBBBBB
+B..............B
+B......BB......B
+B..............B
+B..BB......BB..B
+B.P.B..BB..B...B
+B...B..BB..B.Q.B
+B..BB......BB..B
+B..............B
+B......BB......B
+B..............B
+BBBBBBBBBBBBBBBB

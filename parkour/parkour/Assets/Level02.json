@@ -1,0 +1,22 @@
+{
+   "actors":[
+      { "type":"Block", "pos":[0.0, 0.0, -350.0], "scale":500.0, "texture":2 },
+      { "type":"Block", "pos":[-500.0, 0.0, -250.0], "scale":500.0, "texture":6 },
+      { "type":"Block", "pos":[-1000.0, 0.0, 0.0], "scale":500.0, "texture":6 },
+      { "type":"Block", "pos":[-1300.0, -400.0, 500.0], "scale":500.0, "texture":6 },
+      { "type":"Block", "pos":[-1300.0, 400.0, 500.0], "scale":500.0, "texture":6 },
+      { "type":"Block", "pos":[-1800.0, -400.0, 500.0], "scale":500.0, "texture":6 },
+      { "type":"Block", "pos":[-1800.0, 400.0, 500.0], "scale":500.0, "texture":6 },
+      { "type":"Block", "pos":[-2150.0, 0.0, 0.0], "scale":500.0, "texture":6 },
+		{ "type":"Block", "pos":[-2650.0, 0.0, 500.0], "scale":500.0, "texture":6 },
+		{ "type":"Block", "pos":[-2650.0, -500.0, 500.0], "scale":500.0, "texture":6 },
+		{ "type":"Block", "pos":[-2650.0, -1000.0, 500.0], "scale":500.0, "texture":6 },
+		{ "type":"Block", "pos":[-2150.0, -1000.0, 0.0], "scale":500.0, "texture":6 },
+      { "type":"Block", "pos":[0.0, -500.0, -250.0], "scale":500.0, "texture":3 },
+      { "type":"Block", "pos":[0.0, 500.0, -250.0], "scale":500.0, "texture":4 },
+      { "type":"Block", "pos":[500.0, -125.0, 75.0], "scale":100.0, "texture":1 },
+      { "type":"Block", "pos":[500.0, 0.0, 75.0], "scale":100.0, "texture":3 },
+      { "type":"Block", "pos":[500.0, 125.0, 75.0], "scale":100.0, "texture":4 },
+      { "type":"Player", "pos":[100.0, 0.0, 0.0], "rot":3.14 }
+   ]
+}
