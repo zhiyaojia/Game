@@ -302,7 +302,7 @@ void Game::LoadData()
 		new Arrow(this, NULL);
 	}
 
-	if(BackGroundMuiscName != "Empty")
+	if(BackGroundMuiscName != "Empty" && BackGroundMuiscName != "EMPTY")
 	{
 		Mix_PlayChannel(mGameMusic, GetSound(BackGroundMuiscName), -1);
 	}

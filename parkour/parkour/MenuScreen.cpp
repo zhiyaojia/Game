@@ -2,6 +2,7 @@
 #include "Game.h"
 #include <SDL/SDL.h>
 #include "Renderer.h"
+#include "Font.h"
 #include "SettingScreen.h"
 #include "GameModeScreen.h"
 #include <iostream>
@@ -25,6 +26,12 @@ MenuScreen::MenuScreen(Game* game):UIScreen(game)
    		mGame->ChangeState(Game::Quit);
    		Close();
 	});
+
+	Texture* text1 = mFont->RenderText("Created by", Color::White, 20, true);
+	mTextTextures.push_back(pair<Texture*, Vector2>(text1, Vector2(420.0f, -320.0f)));
+    
+    Texture* text2 = mFont->RenderText("Zhiyao Jia", Color::White, 20, true);
+    mTextTextures.push_back(pair<Texture*, Vector2>(text2, Vector2(422.0f, -345.0f)));
 }
 
 
