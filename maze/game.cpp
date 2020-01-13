@@ -17,6 +17,10 @@ using namespace std;
 Game::Game(vector<string> menu):
 board(menu), player(0,0),solver(board)
 {
+    emoji.push_back("🤑");
+    emoji.push_back("😱");
+    emoji.push_back("😨");
+
     pauseindex=false;
     gameon=true;
     keyhit_=false;

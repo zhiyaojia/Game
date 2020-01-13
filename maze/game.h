@@ -39,7 +39,7 @@ private:
 
     char ch;
 
-    std::vector<std::string> emoji={"🤢", "😱", "😨"};
+    std::vector<std::string> emoji;
     std::vector<std::string> life;
 
     int initial_time, temp_sec, temp_min, temp_time;
